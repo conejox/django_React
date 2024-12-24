@@ -43,13 +43,13 @@ function Form({ route, method }) {
                 onChange={(e) => setUsername(e.target.value)}
                 placeholder="Username"
             />
-            <input
-                className="form-input"
+            <input                className="form-input"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
             />
+            
             {loading && <LoadingIndicator />}
             <button className="form-button" type="submit">
                 {name}
